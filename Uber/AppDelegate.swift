@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  Uber
+//  test
 //
 //  Created by Mahieu Bayon on 31/05/2019.
 //  Copyright © 2019 M4m0ut. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Use Firebase library to configure APIs.
+        FirebaseApp.configure()
         return true
     }
 
